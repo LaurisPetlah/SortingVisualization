@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Sorting Algorithms</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='reset.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+
+<body>
+    <nav class="size3">
+        <button class="selectBtn" id="btn1">bubbleSort</button>
+        <button class="selectBtn selected" id="btn2">quickSort</button class="selectBtn">
+        <button class="selectBtn" id="btn3">mergeSort</button class="selectBtn">
+    </nav>
+    <section class="controlPanel">
+        <div class="slidecontainer range">
+            <span>SPEED (ms)</span>
+            <input type="range" min="0.001" max="500" value="100" class="slider" id="speed">
+        </div>
+
+        <div class="slidecontainer size">
+            <span>SIZE</span>
+            <input type="range" min="10" max="500" value="10" class="slider" id="size">
+        </div>
+    </section>
+    <nav class = "size2">
+        <button id = "reset">Reset</button>
+        <!-- <button id ="shuffle">Shuffle</button> -->
+        <button id="run">Run</button>
+    </nav>
+    <div class="graph">
+        <canvas id="mainCanvas">
+        </canvas>
+    </div>
+    <script src="mainV2.js"></script>
+</body>
+
+</html>
